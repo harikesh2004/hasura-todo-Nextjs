@@ -1,3 +1,4 @@
+"use client";
 import { useMutation } from '@apollo/client';
 import { useState } from 'react';
 import { ADD_TODO } from '../graphql/mutations';

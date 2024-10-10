@@ -1,3 +1,4 @@
+"use client";
 import { useMutation } from '@apollo/client';
 import { DELETE_TODO, MARK_TODO_COMPLETED } from '../graphql/mutations';
 import { GET_TODOS } from '../graphql/queries';
