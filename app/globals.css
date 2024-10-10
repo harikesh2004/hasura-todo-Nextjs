@@ -2,75 +2,37 @@
 
 /* Import Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-/* Center the entire page and set the font */
-body, html {
-  height: 100%;              /* Set the body and HTML to full height */
-  margin: 0;                 /* Remove default margin */
-  display: flex;             /* Use Flexbox */
-  justify-content: center;   /* Horizontally center */
-  align-items: center;       /* Vertically center */
-  font-family: 'Roboto', sans-serif; /* Set font globally */
-  background-color: #f4f4f9; /* Light background color */
-}
-
-/* Ensure the App component takes full screen and centers its content */
+/* Center the content and set maximum width */
 .App {
-  display: flex;             /* Use Flexbox */
-  flex-direction: column;    /* Stack items vertically */
-  justify-content: center;   /* Center items vertically */
-  align-items: center;       /* Center items horizontally */
-  width: 100%;               /* Full width */
-  max-width: 800px;          /* Increased maximum width */
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  background-color: white;   /* White background for the container */
-  border-radius: 30px;       /* Rounded corners */
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  font-family: 'Roboto', sans-serif; /* Set font globally */
 }
 
-/* Style for the input field and add button */
-.input-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
+/* Style for the to-do input and add button */
 input[type="text"] {
-  padding: 12px;
+  padding: 10px;
   margin-right: 10px;
-  border-radius: 25px;
-  border: 1px solid #007bff;
-  width: 80%;               /* Increased width */
-  max-width: 600px;        /* Increased maximum width */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus {
-  border-color: #0056b3;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  width: 70%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 button {
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 20px;
   background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background-color: #0056b3;
-}
-
-/* Style for the todo list */
-.todo-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
 
 /* Style for individual todo items */
@@ -82,8 +44,6 @@ button:hover {
   border-radius: 20px;
   padding: 15px;
   margin: 10px 0;
-  width: 100%;               /* Full width */
-  max-width: 600px;         /* Increased maximum width */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
@@ -101,14 +61,13 @@ button:hover {
 /* Style for the delete all button */
 .delete-all {
   margin-top: 20px;
-  padding: 12px 25px;
-  border-radius: 25px;
+  padding: 10px 20px;
+  border-radius: 20px;
   background-color: #dc3545;
   color: white;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .delete-all:hover {
